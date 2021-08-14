@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="">Sushil Choudhary</a>
+  <a href="https://github.com/sushil-choudhary/sushil-choudhary">Sushil Choudhary</a>
 </h2>
 
 <br/>
