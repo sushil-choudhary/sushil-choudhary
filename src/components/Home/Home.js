@@ -28,6 +28,11 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+              <p style={{ color: "white", fontSize: "1.2em", paddingTop: 10 }}>
+                Passionate about building scalable and performant web
+                applications using modern JavaScript frameworks and best
+                practices.
+              </p>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>

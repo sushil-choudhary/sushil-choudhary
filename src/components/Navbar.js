@@ -14,7 +14,8 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-// import { CgFileDocument } from "react-icons/cg";
+import { CgFileDocument } from "react-icons/cg";
+import { TbFileDownload } from "react-icons/tb";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -27,6 +28,15 @@ function NavBar() {
       updateNavbar(false);
     }
   }
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Sushil.pdf";
+    link.setAttribute("download", "Sushil-Choudhary-Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   window.addEventListener("scroll", scrollHandler);
 
@@ -52,7 +62,10 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto" defaultActiveKey="#home">
+          <Nav
+            className="mx-auto justify-content-center w-100"
+            defaultActiveKey="#home"
+          >
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
@@ -69,6 +82,15 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
             {/* <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -80,38 +102,15 @@ function NavBar() {
                 />{" "}
                 Projects
               </Nav.Link>
-            </Nav.Item>
-
+            </Nav.Item> */}
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item> */}
-
-            {/* <Nav.Item>
-              <Nav.Link
-                href="https://blogs.soumyajit.tech/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+              <Nav.Link onClick={handleDownload} style={{ cursor: "pointer" }}>
+                <TbFileDownload
+                  style={{ marginBottom: "2px", fontSize: "20px" }}
+                />{" "}
+                Download Resume
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

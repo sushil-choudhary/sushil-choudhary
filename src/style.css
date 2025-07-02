@@ -260,11 +260,35 @@ html {
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
-
+.resume-section {
+  position: relative;
+  z-index: 2;
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+}
+
+.resume-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible; /* ✅ don't hide children */
+}
+
+canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 0 !important;
+  pointer-events: none !important;
 }
 
 .heading {
@@ -339,6 +363,12 @@ html {
   color: white !important;
 }
 
+.resume-social {
+  text-align: center !important;
+  /* padding-top: 2px; */
+  color: white !important;
+}
+
 .home-about-social-links {
   justify-content: center !important;
   padding-top: 15px !important;
@@ -346,6 +376,16 @@ html {
   position: relative !important;
   padding-inline-start: 0 !important;
 }
+
+.resume-social-links {
+  justify-content: center !important;
+  padding-top: 10px !important;
+  padding-left: 10px;
+  display: inline-block !important;
+  position: relative !important;
+  padding-inline-start: 0 !important;
+}
+
 
 .home-social-icons {
   position: relative !important;
@@ -388,6 +428,13 @@ html {
 .social-icons {
   display: inline-block !important;
   padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.resume-social-icons {
+  display: inline-block !important;
+  padding-right: 3px;
   padding-left: 15px;
 }
 

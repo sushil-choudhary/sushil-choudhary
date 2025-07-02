@@ -21,37 +21,34 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm a <b className="purple">Senior React Developer</b> with a
+              strong passion for building scalable, performant, and intuitive
+              web applications. My journey in programming began with curiosity
+              and turned into a full-blown obsession 🚀
               <br />
-              <br />I am fluent in classics like
+              <br />I specialize in modern JavaScript frameworks like{" "}
               <i>
-                <b className="purple"> Javascript and React. </b>
+                <b className="purple">React.js, Next.js, and TypeScript</b>
               </i>
+              , and have led front-end architecture using{" "}
+              <b className="purple">micro frontends</b> and{" "}
+              <b className="purple">module federation</b> across multiple
+              enterprise-grade platforms.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-              </i>
+              I'm deeply interested in building end-to-end digital products, and
+              I occasionally dive into <b className="purple">
+                Deep Learning
+              </b>{" "}
+              and <b className="purple">Natural Language Processing</b> to
+              explore new challenges.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js ans Next.js</b>
-              </i>
+              Whether it's working with{" "}
+              <b className="purple">Node.js, Redux, Zustand</b>, or designing
+              component libraries with <b className="purple">Material UI</b> and{" "}
+              <b className="purple">PrimeReact</b> — I thrive on clean code,
+              design systems, and collaboration.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -79,7 +76,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/schoudhary98"
+                  href="https://twitter.com/sushil_chotiya"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -99,7 +96,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/sushil_choudhary0402/"
+                  href="https://www.instagram.com/sushil.choudhary4/#"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -126,10 +123,20 @@ function Home2() {
                 </a>
               </li>
             </ul>
+
+            {/* Resume Download Button */}
+            {/* <a
+              href="/Sushil.pdf"
+              download
+              className="btn btn-outline-light mt-4"
+            >
+              📄 Download Resume
+            </a> */}
           </Col>
         </Row>
       </Container>
     </Container>
   );
 }
+
 export default Home2;
