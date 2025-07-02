@@ -1,58 +1,41 @@
 import React from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
 function Particle() {
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
+
   return (
     <Particles
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        zIndex: 0,
-        pointerEvents: "none",
-      }}
-      params={{
+      id="tsparticles"
+      init={particlesInit}
+      options={{
+        fullScreen: { enable: true },
         particles: {
           number: {
-            value: 160,
+            value: 50,
             density: {
               enable: true,
-              value_area: 1500,
+              value_area: 800,
             },
           },
-          line_linked: {
-            enable: false,
-            opacity: 0.03,
-          },
-          move: {
-            direction: "right",
-            speed: 0.05,
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: {
+            value: 0.5,
+            random: false,
           },
           size: {
-            value: 1,
+            value: 3,
+            random: true,
           },
-          opacity: {
-            anim: {
-              enable: true,
-              speed: 1,
-              opacity_min: 0.05,
-            },
+          move: {
+            enable: true,
+            speed: 2,
           },
         },
-        interactivity: {
-          events: {
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-          },
-          modes: {
-            push: {
-              particles_nb: 1,
-            },
-          },
-        },
-        retina_detect: true,
       }}
     />
   );

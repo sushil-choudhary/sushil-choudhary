@@ -8,15 +8,16 @@
     "@testing-library/user-event": "^12.6.0",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
-    "react": "^17.0.1",
+    "react": "^18.3.1",
     "react-bootstrap": "^1.4.0",
-    "react-dom": "^17.0.1",
+    "react-dom": "^18.3.1",
     "react-github-calendar": "^2.0.2",
     "react-icons": "^4.12.0",
     "react-parallax-tilt": "^1.4.68",
-    "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^5.0.1",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.8.1",
     "typewriter-effect": "^2.17.0",
     "vercel": "^23.1.2",
     "web-vitals": "^0.2.4"
@@ -26,10 +27,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "resolutions": {
-    "postcss": "^8.4.31",
-    "postcss-safe-parser": "^6.0.0"
   },
   "eslintConfig": {
     "extends": [
