@@ -1,102 +1,124 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import { motion } from "framer-motion";
 import { ImPointRight } from "react-icons/im";
+
+const listVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.07 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: "easeOut" } },
+};
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
+    <Card className="quote-card-view about-card-glass">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hello! I'm <span className="purple">Sushil Choudhary</span> from{" "}
-            <span className="purple">Jaipur, India</span>. My path into tech
-            wasn’t your typical CS-grad story — I earned a{" "}
-            <b className="purple">B.A. in History & Political Science</b> and
-            took a leap into code through self-learning and a React internship.
+            Hey! I'm <span className="purple">Sushil Choudhary</span> from{" "}
+            <span className="purple">Jaipur, India</span> — and yes, I have a{" "}
+            <b className="purple">B.A. in History &amp; Political Science</b>.
+            Not exactly the degree you'd expect from a{" "}
+            <b className="purple">Team Lead &amp; Full Stack Developer</b>, right?
             <br />
             <br />
-            That internship turned into a trainee role, then into a full-time
-            web developer job. Over time, I worked my way up to{" "}
-            <b className="purple">Software Engineer</b> and now proudly work as
-            a <b className="purple">Senior Software Engineer</b> at Sarvika
-            Technologies — leading frontend architecture and building scalable
-            products with React, Next.js, TypeScript, and more.
+            But here's the thing — studying History taught me to think in
+            systems, trace root causes, and understand why things work the way
+            they do. Those same skills drive how I architect software, lead
+            teams, and debug complex problems. The subject changed; the mindset
+            didn't.
             <br />
-            <br />I believe in building things that are not just functional, but
-            also elegant, efficient, and user-focused. My mission as a developer
-            is to craft clean, maintainable code that empowers teams and
-            improves lives. And when I’m not writing code, I’m usually
-            mentoring, learning something new, or finding a better way to do
-            both.
+            <br />
+            I taught myself to code, landed a{" "}
+            <b className="purple">React internship</b>, and what started as a
+            3-month experiment turned into a{" "}
+            <b className="purple">5+ year career journey</b> — from intern to
+            Team Lead, one promotion at a time. Today I lead{" "}
+            <b className="purple">7+ engineers</b> at Sarvika Technologies
+            while staying hands-on as a{" "}
+            <b className="purple">React Native &amp; React JS developer</b>,
+            shipping real products to real App Stores.
+            <br />
+            <br />
+            I've architected enterprise platforms across{" "}
+            <b className="purple">Ed-Tech</b>,{" "}
+            <b className="purple">Healthcare</b>, and{" "}
+            <b className="purple">Enterprise SaaS</b> — and I integrate{" "}
+            <b className="purple">AI tools including Claude</b> into my daily
+            workflow to keep the team moving faster than ever.
           </p>
 
-          <hr />
+          <hr className="about-divider" />
 
           <p style={{ fontWeight: "bold" }} className="purple">
             ⚙️ Tech Toolbox:
           </p>
-          <ul>
-            <li>
-              <ImPointRight /> ReactJS, Next.js, TypeScript, Redux, Zustand
-            </li>
-            <li>
-              <ImPointRight /> Node.js, NestJS, REST APIs, JWT
-            </li>
-            <li>
-              <ImPointRight /> Micro Frontends, Module Federation
-            </li>
-            <li>
-              <ImPointRight /> Material UI, PrimeReact, React Native
-            </li>
-            <li>
-              <ImPointRight /> GitHub, GitLab, Bitbucket, VS Code, Postman
-            </li>
-            <li>
-              <ImPointRight /> JIRA, Confluence | Linux + Windows environments
-            </li>
-          </ul>
+          <motion.ul
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {[
+              "React Native (iOS & Android, App Store & Play Store)",
+              "ReactJS, Next.js, TypeScript, Redux Toolkit, Zustand",
+              "Micro Frontends, Webpack Module Federation",
+              "Node.js, NestJS, REST APIs, gRPC, JWT",
+              "Material UI, Tailwind CSS, NativeBase, React Navigation",
+              "Docker, Kubernetes, GitLab CI/CD, SonarQube",
+              "GitHub, GitLab, Bitbucket, VS Code, Postman, JIRA",
+            ].map((item, i) => (
+              <motion.li key={i} variants={itemVariants}>
+                <ImPointRight /> {item}
+              </motion.li>
+            ))}
+          </motion.ul>
 
           <p style={{ fontWeight: "bold" }} className="purple">
-            💡 Soft Skills:
+            💡 Leadership &amp; Soft Skills:
           </p>
-          <ul>
-            <li>
-              <ImPointRight /> Project Ownership & Agile Mindset
-            </li>
-            <li>
-              <ImPointRight /> Mentorship & Team Collaboration
-            </li>
-            <li>
-              <ImPointRight /> Empathy-Driven Problem Solving
-            </li>
-          </ul>
+          <motion.ul
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {[
+              "Team Leadership — managing & mentoring 7+ engineers",
+              "End-to-end Project Ownership & Delivery",
+              "Agile / Scrum mindset with cross-functional collaboration",
+              "AI-augmented development (Claude, Copilot)",
+            ].map((item, i) => (
+              <motion.li key={i} variants={itemVariants}>
+                <ImPointRight /> {item}
+              </motion.li>
+            ))}
+          </motion.ul>
 
-          <hr />
+          <hr className="about-divider" />
 
           <p style={{ fontWeight: "bold" }} className="purple">
             🧠 When I'm not coding...
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Taking my bike out for soul-healing rides and
-              sometimes just for chai 🏍️☕
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Cooking experiments — sometimes edible, always
-              ambitious 🍳🔥
-            </li>
-          </ul>
-
-          {/* <p
-            style={{
-              marginBlockEnd: 0,
-              color: "rgb(155 126 172)",
-              fontStyle: "italic",
-            }}
+          <motion.ul
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
           >
-            "Strive to build things that make a difference!"
-          </p>
-          <footer className="blockquote-footer">Sushil Choudhary</footer> */}
+            {[
+              "Taking my bike out for soul-healing rides and sometimes just for chai 🏍️☕",
+              "Cooking experiments — sometimes edible, always ambitious 🍳🔥",
+            ].map((item, i) => (
+              <motion.li key={i} variants={itemVariants} className="about-activity">
+                <ImPointRight /> {item}
+              </motion.li>
+            ))}
+          </motion.ul>
         </blockquote>
       </Card.Body>
     </Card>

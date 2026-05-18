@@ -4,6 +4,26 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.18, duration: 0.65, ease: "easeOut" },
+  }),
+};
+
+const techStack = [
+  "React JS",
+  "React Native",
+  "TypeScript",
+  "Node.js",
+  "Webpack MF",
+  "AWS",
+];
 
 function Home() {
   return (
@@ -13,30 +33,83 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <motion.h1
+                custom={0}
+                variants={fadeUp}
+                initial="hidden"
+                animate="visible"
+                style={{ paddingBottom: 15 }}
+                className="heading"
+              >
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
-              </h1>
+              </motion.h1>
 
-              <h1 className="heading-name">
+              <motion.h1
+                custom={1}
+                variants={fadeUp}
+                initial="hidden"
+                animate="visible"
+                className="heading-name"
+              >
                 I'M
-                <strong className="main-name"> SUSHIL CHOUDHARY</strong>
-              </h1>
+                <strong className="main-name gradient-name">
+                  {" "}
+                  SUSHIL CHOUDHARY
+                </strong>
+              </motion.h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <motion.div
+                custom={2}
+                variants={fadeUp}
+                initial="hidden"
+                animate="visible"
+                style={{ padding: 50, textAlign: "left" }}
+              >
                 <Type />
-              </div>
-              <p style={{ color: "white", fontSize: "1.2em", paddingTop: 10 }}>
-                Passionate about building scalable and performant web
-                applications using modern JavaScript frameworks and best
-                practices.
-              </p>
+              </motion.div>
+
+              <motion.div
+                custom={3}
+                variants={fadeUp}
+                initial="hidden"
+                animate="visible"
+                className="tech-badges"
+              >
+                {techStack.map((tech, i) => (
+                  <span key={i} className="tech-badge">
+                    {tech}
+                  </span>
+                ))}
+              </motion.div>
+
+              <motion.div
+                custom={4}
+                variants={fadeUp}
+                initial="hidden"
+                animate="visible"
+                className="home-cta-buttons"
+              >
+                <Link to="/project">
+                  <button className="btn-cta-primary">View Projects</button>
+                </Link>
+                <Link to="/resume">
+                  <button className="btn-cta-secondary">My Resume</button>
+                </Link>
+              </motion.div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
+              <motion.img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid home-logo-animated"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
+              />
             </Col>
           </Row>
         </Container>

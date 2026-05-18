@@ -2,18 +2,12 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-// import logo from "../Assets/logo.png";
-// import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-// import { CgGitFork } from "react-icons/cg";
-// import { ImBlog } from "react-icons/im";
 import {
-  // AiFillStar,
   AiOutlineHome,
-  // AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 import { TbFileDownload } from "react-icons/tb";
 
@@ -48,9 +42,6 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        {/* <Navbar.Brand href="/">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand> */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -85,30 +76,30 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
+                Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item> */}
+
             <Nav.Item>
               <Nav.Link onClick={handleDownload} style={{ cursor: "pointer" }}>
                 <TbFileDownload
                   style={{ marginBottom: "2px", fontSize: "20px" }}
                 />{" "}
-                Download Resume
+                Download CV
               </Nav.Link>
             </Nav.Item>
           </Nav>
