@@ -217,7 +217,7 @@ function Resume() {
                       Jaipur, India
                     </p>
                   </div>
-                  <span className="timeline-badge">Sep 2020 – Present · 5.5 yrs</span>
+                  <span className="timeline-badge">Sep 2020 – Present · 5+ yrs</span>
                 </div>
 
                 {/* Timeline of roles */}
@@ -225,7 +225,7 @@ function Resume() {
                   {[
                     {
                       role: "Team Lead",
-                      period: "Dec 2023 – Present",
+                      period: "Apr 2026 – Present",
                       color: "#c770f0",
                       isCurrent: true,
                       points: [
@@ -237,7 +237,7 @@ function Resume() {
                     },
                     {
                       role: "Senior Software Engineer",
-                      period: "Dec 2022 – Dec 2023",
+                      period: "Jan 2025 – Apr 2026",
                       color: "#a855f7",
                       isCurrent: false,
                       points: [
@@ -249,7 +249,7 @@ function Resume() {
                     },
                     {
                       role: "Software Engineer",
-                      period: "Dec 2021 – Dec 2022",
+                      period: "Dec 2021 – Jan 2025",
                       color: "#818cf8",
                       isCurrent: false,
                       points: [
