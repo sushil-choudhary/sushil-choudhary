@@ -35,8 +35,17 @@ const domains = [
           "Multi-tenant RBAC with fine-grained permissions across users, groups, and policies",
         ],
         tech: [
-          "React 18", "Redux", "MUI v6", "Tailwind CSS", "Webpack 5 MFE",
-          "WebSocket", "CKEditor 5", "GrapesJS", "ECharts", "Docker", "Kubernetes",
+          "React 18",
+          "Redux",
+          "MUI v6",
+          "Tailwind CSS",
+          "Webpack 5 MFE",
+          "WebSocket",
+          "CKEditor 5",
+          "GrapesJS",
+          "ECharts",
+          "Docker",
+          "Kubernetes",
         ],
         scale: "28+ modules · Multi-tenant · Kubernetes + GitLab CI/CD",
       },
@@ -55,10 +64,19 @@ const domains = [
           "ADA compliance, reCAPTCHA v3, FERPA agreements, and Google Analytics/GTM",
         ],
         tech: [
-          "React 18", "TypeScript", "Redux", "MUI v7", "Tailwind CSS",
-          "Formik", "Webpack 5", "i18next", "Form.io", "reCAPTCHA v3",
+          "React 18",
+          "TypeScript",
+          "Redux",
+          "MUI v7",
+          "Tailwind CSS",
+          "Formik",
+          "Webpack 5",
+          "i18next",
+          "Form.io",
+          "reCAPTCHA v3",
         ],
-        scale: "15+ Redux slices · 9+ institutional themes · Multi-gateway payments",
+        scale:
+          "15+ Redux slices · 9+ institutional themes · Multi-gateway payments",
       },
       {
         title: "AI Assessment & Grading Module",
@@ -75,10 +93,19 @@ const domains = [
           "District Admin, Registrar, and Root roles with granular permission management",
         ],
         tech: [
-          "React 18", "Redux", "MUI v5", "Tailwind CSS", "Webpack 5 MFE",
-          "Recharts", "CKEditor 5", "GrapesJS", "Docker", "Kubernetes",
+          "React 18",
+          "Redux",
+          "MUI v5",
+          "Tailwind CSS",
+          "Webpack 5 MFE",
+          "Recharts",
+          "CKEditor 5",
+          "GrapesJS",
+          "Docker",
+          "Kubernetes",
         ],
-        scale: "64+ reusable components · Districts → Schools hierarchy · OAuth 2.0",
+        scale:
+          "64+ reusable components · Districts → Schools hierarchy · OAuth 2.0",
       },
     ],
   },
@@ -106,10 +133,19 @@ const domains = [
           "Redux async reducer injection for performance-optimized state loading",
         ],
         tech: [
-          "React 18", "Redux", "MUI v7", "Tailwind CSS", "CKEditor 5",
-          "GrapesJS", "WebSocket", "Webpack 5 MFE", "Docker", "Kubernetes",
+          "React 18",
+          "Redux",
+          "MUI v7",
+          "Tailwind CSS",
+          "CKEditor 5",
+          "GrapesJS",
+          "WebSocket",
+          "Webpack 5 MFE",
+          "Docker",
+          "Kubernetes",
         ],
-        scale: "683+ JS files · 231+ components · 15+ microservices · 3 WebSocket channels",
+        scale:
+          "683+ JS files · 231+ components · 15+ microservices · 3 WebSocket channels",
       },
       {
         title: "LMS Student Portal",
@@ -126,10 +162,19 @@ const domains = [
           "10+ configurable institutional themes with multi-language support",
         ],
         tech: [
-          "React 18", "TypeScript", "Redux", "MUI v7", "Tailwind CSS",
-          "WebSocket", "Recharts", "Webpack 5", "Docker", "Kubernetes",
+          "React 18",
+          "TypeScript",
+          "Redux",
+          "MUI v7",
+          "Tailwind CSS",
+          "WebSocket",
+          "Recharts",
+          "Webpack 5",
+          "Docker",
+          "Kubernetes",
         ],
-        scale: "23 containers · 109+ components · 13 reducers · 10+ microservices",
+        scale:
+          "23 containers · 109+ components · 13 reducers · 10+ microservices",
       },
       {
         title: "License Management Dashboard",
@@ -146,8 +191,15 @@ const domains = [
           "Multi-stage Docker builds with SonarQube quality gates in GitLab CI/CD",
         ],
         tech: [
-          "Next.js 15", "React 19", "TypeScript", "Redux Toolkit",
-          "MUI v6", "Formik", "Axios", "Docker", "Kubernetes",
+          "Next.js 15",
+          "React 19",
+          "TypeScript",
+          "Redux Toolkit",
+          "MUI v6",
+          "Formik",
+          "Axios",
+          "Docker",
+          "Kubernetes",
         ],
         scale: "Multi-tenant SaaS · Next.js App Router · Redux Toolkit",
       },
@@ -175,12 +227,23 @@ const domains = [
           "Flexible rules engine for medication adherence, prescriptions, and appointment follow-ups",
           "Fine-grained RBAC with 15+ permission types across user groups and policies",
           "Full audit trail logging for healthcare compliance (HIPAA-aware design)",
+          "Unit and integration test coverage using Vitest and React Testing Library",
         ],
         tech: [
-          "React 18", "Redux", "MUI v5", "Tailwind CSS", "Recharts",
-          "@dnd-kit", "Axios", "i18next (EN/FR)", "Docker", "Kubernetes",
+          "React 18",
+          "Redux",
+          "MUI v5",
+          "Tailwind CSS",
+          "Recharts",
+          "@dnd-kit",
+          "Axios",
+          "i18next (EN/FR)",
+          "Vitest",
+          "Docker",
+          "Kubernetes",
         ],
-        scale: "200+ components · 15+ modules · ~182K lines · 10+ microservices",
+        scale:
+          "200+ components · 15+ modules · ~182K lines · 10+ microservices",
       },
       {
         title: "Patient Healthcare Mobile App",
@@ -197,8 +260,16 @@ const domains = [
           "Downloadable PDF health assessments, trend charts, and compliance summaries",
         ],
         tech: [
-          "React Native 0.68", "Redux", "NativeBase", "BLE Manager",
-          "Protobuf", "Firebase FCM", "Razorpay", "SQLite", "AsyncStorage", "Formik",
+          "React Native 0.68",
+          "Redux",
+          "NativeBase",
+          "BLE Manager",
+          "Protobuf",
+          "Firebase FCM",
+          "Razorpay",
+          "SQLite",
+          "AsyncStorage",
+          "Formik",
         ],
         scale: "iOS & Android · EN/HI multilingual · Bluetooth IoT integration",
       },
@@ -217,10 +288,19 @@ const domains = [
           "Deployed and live on iOS App Store and Google Play Store",
         ],
         tech: [
-          "React Native 0.81", "TypeScript", "Redux Toolkit", "React Navigation",
-          "Axios", "React Hook Form", "Yup", "i18next", "Lottie", "SonarQube",
+          "React Native 0.81",
+          "TypeScript",
+          "Redux Toolkit",
+          "React Navigation",
+          "Axios",
+          "React Hook Form",
+          "Yup",
+          "i18next",
+          "Lottie",
+          "SonarQube",
         ],
-        scale: "iOS App Store · Google Play Store · 9 wellness goals · 8+ microservices",
+        scale:
+          "iOS App Store · Google Play Store · 9 wellness goals · 8+ microservices",
       },
     ],
   },
@@ -248,8 +328,16 @@ const domains = [
           "Shell App: TMS module federation wiring and AGM permission verbiage management",
         ],
         tech: [
-          "React", "Redux", "MUI v4/v5", "Formik", "Axios",
-          "React Router", "i18next", "SCSS", "Webpack MFE", "Kubernetes",
+          "React",
+          "Redux",
+          "MUI v4/v5",
+          "Formik",
+          "Axios",
+          "React Router",
+          "i18next",
+          "SCSS",
+          "Webpack MFE",
+          "Kubernetes",
         ],
         scale: "6 microfrontend modules · Multi-env: dev / UAT / stage / prod",
       },
@@ -279,10 +367,53 @@ const domains = [
           "Admin dashboard with analytics, audit logs, and bulk user management",
         ],
         tech: [
-          "React 16", "Redux", "Material UI", "Socket.IO", "Axios",
-          "Recharts", "i18next", "Docker", "Kubernetes", "GitLab CI/CD",
+          "React 16",
+          "Redux",
+          "Material UI",
+          "Socket.IO",
+          "Axios",
+          "Recharts",
+          "i18next",
+          "Docker",
+          "Kubernetes",
+          "GitLab CI/CD",
         ],
-        scale: "Multi-role SaaS · SSO integration · Dockerized multi-env deployments",
+        scale:
+          "Multi-role SaaS · SSO integration · Dockerized multi-env deployments",
+      },
+    ],
+  },
+  {
+    id: "commerce",
+    name: "Internal Commerce & Order Management",
+    short: "Commerce",
+    icon: "🛒",
+    accent: "#34d399",
+    tagline:
+      "Internal e-commerce order management platform built for account executives and order processing teams.",
+    projects: [
+      {
+        title: "Internal Commerce & Order Management Platform",
+        shortTag: "Commerce · Internal",
+        role: "Team Contribution",
+        types: ["Web", "Next.js 14", "Internal Tool"],
+        description:
+          "Internal order management platform for account executives and order processing teams, built on the Next.js 14 App Router with modern client-state and form-validation tooling.",
+        highlights: [
+          "Built with Next.js 14 App Router for server/client component separation",
+          "Zustand for lightweight global state management",
+          "TanStack Query for server-state caching and data synchronization",
+          "React Hook Form with Zod schema validation for robust, type-safe forms",
+        ],
+        tech: [
+          "Next.js 14",
+          "TypeScript",
+          "Zustand",
+          "TanStack Query",
+          "React Hook Form",
+          "Zod",
+        ],
+        scale: "Next.js App Router · Order processing workflows",
       },
     ],
   },
@@ -358,7 +489,14 @@ function ProjectCard({ project, accent }) {
         {project.title}
       </h4>
 
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "14px" }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "6px",
+          marginBottom: "14px",
+        }}
+      >
         {project.types.map((type, i) => (
           <span
             key={i}
@@ -491,8 +629,8 @@ function Projects() {
                 }}
               >
                 Enterprise platforms I've architected and led across Ed-Tech,
-                Healthcare, and Enterprise SaaS domains — from web microfrontends
-                to mobile apps deployed on App Stores.
+                Healthcare, and Enterprise SaaS domains — from web
+                microfrontends to mobile apps deployed on App Stores.
               </p>
             </Col>
           </Row>
@@ -557,8 +695,8 @@ function Projects() {
             domain.projects.length === 1
               ? { xs: 12, md: 10, lg: 8 }
               : domain.projects.length === 2
-              ? { xs: 12, md: 6 }
-              : { xs: 12, md: 6, lg: 4 };
+                ? { xs: 12, md: 6 }
+                : { xs: 12, md: 6, lg: 4 };
 
           return (
             <motion.div
@@ -627,7 +765,11 @@ function Projects() {
                 </div>
               </div>
 
-              <Row className={domain.projects.length === 1 ? "justify-content-center" : ""}>
+              <Row
+                className={
+                  domain.projects.length === 1 ? "justify-content-center" : ""
+                }
+              >
                 {domain.projects.map((project, idx) => (
                   <Col key={idx} {...colProps} style={{ marginBottom: "24px" }}>
                     <motion.div

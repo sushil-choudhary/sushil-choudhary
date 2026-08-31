@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sushil Choudhary — Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.5pt;
+    color: #1a1a2e;
+    background: #fff;
+    line-height: 1.45;
+  }
+  a { color: #6d28d9; text-decoration: none; }
+
+  /* ── Page wrapper ── */
+  .page { padding: 28px 34px 24px; max-width: 800px; margin: 0 auto; }
+
+  /* ── Header ── */
+  .header { text-align: center; border-bottom: 2.5px solid #6d28d9; padding-bottom: 12px; margin-bottom: 14px; }
+  .header h1 { font-size: 22pt; color: #1a1a2e; font-weight: 800; letter-spacing: 0.04em; }
+  .header .title { font-size: 11pt; color: #6d28d9; font-weight: 600; margin-top: 2px; }
+  .contact-row { margin-top: 7px; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 16px; font-size: 9pt; color: #444; }
+  .contact-row span { white-space: nowrap; }
+
+  /* ── Section ── */
+  .section { margin-top: 13px; }
+  .section-title {
+    font-size: 10pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;
+    color: #6d28d9; border-bottom: 1.5px solid #ddd6fe; padding-bottom: 3px; margin-bottom: 9px;
+  }
+
+  /* ── Skills grid ── */
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
+  .skill-group { background: #faf5ff; border: 1px solid #e9d5ff; border-radius: 5px; padding: 7px 10px; }
+  .skill-group .label { font-size: 8pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #7c3aed; margin-bottom: 4px; }
+  .skill-group .pills { display: flex; flex-wrap: wrap; gap: 3px; }
+  .skill-group .pill { background: #ede9fe; color: #4c1d95; border-radius: 3px; padding: 1px 6px; font-size: 8pt; }
+
+  /* ── Experience ── */
+  .company-hdr { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .company-name { font-size: 12pt; font-weight: 800; color: #1a1a2e; }
+  .company-meta { font-size: 8.5pt; color: #666; }
+  .role-block { margin-bottom: 9px; padding-left: 12px; border-left: 2.5px solid #ddd6fe; }
+  .role-hdr { display: flex; justify-content: space-between; align-items: baseline; }
+  .role-name { font-size: 10pt; font-weight: 700; color: #6d28d9; }
+  .role-period { font-size: 8pt; color: #888; white-space: nowrap; }
+  .role-current { display: inline-block; background: #ede9fe; color: #6d28d9; border-radius: 3px; padding: 0 5px; font-size: 7.5pt; font-weight: 700; margin-left: 6px; vertical-align: middle; }
+  .role-block ul { padding-left: 14px; margin-top: 4px; }
+  .role-block ul li { font-size: 9.5pt; color: #333; margin-bottom: 2px; }
+
+  /* ── Projects ── */
+  .project-card { border-left: 3px solid #7c3aed; padding: 7px 10px; margin-bottom: 8px; background: #faf5ff; border-radius: 0 5px 5px 0; }
+  .proj-hdr { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 3px; }
+  .proj-title { font-size: 10pt; font-weight: 700; color: #1a1a2e; }
+  .proj-role { font-size: 7.5pt; background: #ede9fe; color: #6d28d9; border-radius: 3px; padding: 0px 6px; white-space: nowrap; }
+  .proj-desc { font-size: 9pt; color: #444; margin-bottom: 4px; }
+  .tech-list { display: flex; flex-wrap: wrap; gap: 3px; }
+  .tech-tag { background: #ede9fe; color: #4c1d95; border-radius: 3px; padding: 1px 6px; font-size: 7.5pt; }
+
+  /* ── Education ── */
+  .edu-item { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 7px; }
+  .edu-left .degree { font-size: 10pt; font-weight: 700; color: #1a1a2e; }
+  .edu-left .school { font-size: 9pt; color: #555; }
+  .edu-left .note { font-size: 8.5pt; color: #777; font-style: italic; margin-top: 2px; max-width: 560px; }
+  .edu-year { font-size: 8.5pt; color: #7c3aed; font-weight: 700; white-space: nowrap; }
+
+  /* ── Soft skills / stats strip ── */
+  .stats-strip { display: flex; gap: 18px; margin-top: 6px; }
+  .stat { text-align: center; }
+  .stat .num { font-size: 14pt; font-weight: 800; color: #6d28d9; }
+  .stat .lbl { font-size: 7.5pt; color: #888; text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* print safety */
+  .project-card, .role-block, .edu-item { page-break-inside: avoid; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ═══════════ HEADER ═══════════ -->
+  <div class="header">
+    <h1>SUSHIL CHOUDHARY</h1>
+    <div class="title">Team Lead &middot; React Native &amp; React JS Developer</div>
+    <div class="contact-row">
+      <span>&#128222; +91 7340321143</span>
+      <span>&#9993; sushilchoudhary9871@gmail.com</span>
+      <span><a href="https://www.linkedin.com/in/sushil-choudhary-0545211b3/">LinkedIn</a></span>
+      <span><a href="https://github.com/sushil-choudhary">GitHub</a></span>
+      <span>Jaipur, India</span>
+    </div>
+  </div>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <div class="section">
+    <div class="section-title">Skills &amp; Tools</div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="label">Mobile</div>
+        <div class="pills">
+          <span class="pill">React Native</span>
+          <span class="pill">iOS &amp; Android</span>
+          <span class="pill">App Store &amp; Play Store</span>
+          <span class="pill">React Navigation</span>
+          <span class="pill">NativeBase</span>
+          <span class="pill">BLE Manager</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="label">Frontend</div>
+        <div class="pills">
+          <span class="pill">ReactJS</span>
+          <span class="pill">Next.js</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Redux Toolkit</span>
+          <span class="pill">Zustand</span>
+          <span class="pill">Micro Frontends</span>
+          <span class="pill">Webpack MF</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="label">Backend</div>
+        <div class="pills">
+          <span class="pill">NodeJS</span>
+          <span class="pill">NestJS</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">gRPC</span>
+          <span class="pill">JWT / OAuth 2.0</span>
+          <span class="pill">WebSocket</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="label">UI / Styling</div>
+        <div class="pills">
+          <span class="pill">Material UI</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">Formik / Yup</span>
+          <span class="pill">React Hook Form</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="label">DevOps &amp; Tools</div>
+        <div class="pills">
+          <span class="pill">Docker</span>
+          <span class="pill">Kubernetes</span>
+          <span class="pill">GitLab CI/CD</span>
+          <span class="pill">SonarQube</span>
+          <span class="pill">JIRA</span>
+          <span class="pill">VS Code</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="label">Leadership</div>
+        <div class="pills">
+          <span class="pill">Team Leadership</span>
+          <span class="pill">Project Ownership</span>
+          <span class="pill">Agile / Scrum</span>
+          <span class="pill">AI-Augmented Dev</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ WORK EXPERIENCE ═══════════ -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="company-hdr">
+      <span class="company-name">Sarvika Technologies</span>
+      <span class="company-meta">Jaipur, India &nbsp;|&nbsp; Sep 2020 – Present &nbsp;(5+ years)</span>
+    </div>
+
+    <!-- Team Lead -->
+    <div class="role-block">
+      <div class="role-hdr">
+        <span class="role-name">Team Lead <span class="role-current">Current</span></span>
+        <span class="role-period">Apr 2026 – Present</span>
+      </div>
+      <ul>
+        <li>Leading &amp; mentoring a team of 7+ engineers — code reviews, sprint planning, architecture decisions, and delivery.</li>
+        <li>Driving adoption of Webpack Module Federation microfrontends across multiple enterprise platforms for independent deployments.</li>
+        <li>Integrated AI tools (including Claude) into team workflow — accelerating code generation, reviews, and problem solving.</li>
+        <li>Established component libraries, ESLint configs, Husky hooks, and CI/CD pipelines across all active projects.</li>
+      </ul>
+    </div>
+
+    <!-- Senior Software Engineer -->
+    <div class="role-block">
+      <div class="role-hdr">
+        <span class="role-name">Senior Software Engineer</span>
+        <span class="role-period">Jan 2025 – Apr 2026</span>
+      </div>
+      <ul>
+        <li>Built and shipped cross-platform React Native apps to iOS App Store &amp; Google Play Store — BLE device integration, real-time health tracking, AI-powered features.</li>
+        <li>Led frontend architecture for large-scale Ed-Tech SIS + LMS microfrontend platforms serving thousands of users.</li>
+        <li>Independently delivered a full Healthcare RPM web platform — 200+ components, 15+ modules, HIPAA-aware design.</li>
+        <li>Introduced performance patterns: code splitting, lazy loading, Redux async injection — measurably improving load times.</li>
+      </ul>
+    </div>
+
+    <!-- Software Engineer -->
+    <div class="role-block">
+      <div class="role-hdr">
+        <span class="role-name">Software Engineer</span>
+        <span class="role-period">Dec 2021 – Jan 2025</span>
+      </div>
+      <ul>
+        <li>Built complex feature modules end-to-end — full ownership of multi-step workflows, data tables, and form systems.</li>
+        <li>Worked across React Native (mobile) and React JS (web) simultaneously on the RPM Healthcare platform.</li>
+        <li>Introduced TypeScript, Formik/Yup, and React Hook Form across the team for type-safety and consistent form handling.</li>
+      </ul>
+    </div>
+
+    <!-- Web Developer -->
+    <div class="role-block">
+      <div class="role-hdr">
+        <span class="role-name">Web Developer</span>
+        <span class="role-period">Jun 2021 – Dec 2021</span>
+      </div>
+      <ul>
+        <li>Developed reusable UI components for the Online Tutoring Platform and Enterprise Workflow Platform.</li>
+        <li>Gained deep experience in Redux state management, REST API integration, and multi-role authentication flows.</li>
+      </ul>
+    </div>
+
+    <!-- Web Developer Trainee -->
+    <div class="role-block">
+      <div class="role-hdr">
+        <span class="role-name">Web Developer Trainee</span>
+        <span class="role-period">Dec 2020 – Jun 2021</span>
+      </div>
+      <ul>
+        <li>Ramped up on the full React ecosystem — hooks, routing, state management, and production-grade coding standards.</li>
+        <li>Contributed to real client projects from day one, building screens under senior guidance.</li>
+      </ul>
+    </div>
+
+    <!-- React Intern -->
+    <div class="role-block" style="border-left-color:#c4b5fd;">
+      <div class="role-hdr">
+        <span class="role-name" style="color:#9ca3af;">React Intern</span>
+        <span class="role-period">Sep 2020 – Dec 2020</span>
+      </div>
+      <ul>
+        <li>Joined fresh out of a History degree — self-taught React, learned professional development workflows.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+
+    <div class="project-card">
+      <div class="proj-hdr">
+        <span class="proj-title">&#127891; Student Information System (SIS)</span>
+        <span class="proj-role">Led Independently</span>
+      </div>
+      <div class="proj-desc">Enterprise ed-tech microfrontend platform — Admin Portal (28+ modules, multi-tenant RBAC, WebSocket), Student &amp; Parent Portal (multi-tenant routing, multi-gateway payments, LMS integration), and AI Assessment &amp; Grading Module.</div>
+      <div class="tech-list">
+        <span class="tech-tag">React 18</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Redux</span><span class="tech-tag">MUI</span><span class="tech-tag">Tailwind</span><span class="tech-tag">Webpack MFE</span><span class="tech-tag">Docker</span><span class="tech-tag">Kubernetes</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-hdr">
+        <span class="proj-title">&#128218; Learning Management System (LMS)</span>
+        <span class="proj-role">Led Independently</span>
+      </div>
+      <div class="proj-desc">LMS Admin Portal (14 modules, 683+ JS files, AI content generation, SIS sync) and LMS Student Portal (quizzes, e-portfolio, gamification, real-time messaging) — both as Webpack MFE microfrontends.</div>
+      <div class="tech-list">
+        <span class="tech-tag">React 18</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Redux</span><span class="tech-tag">MUI v7</span><span class="tech-tag">Webpack MFE</span><span class="tech-tag">WebSocket</span><span class="tech-tag">CKEditor 5</span><span class="tech-tag">Kubernetes</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-hdr">
+        <span class="proj-title">&#127973; Healthcare Remote Monitoring (RPM)</span>
+        <span class="proj-role">Led Independently</span>
+      </div>
+      <div class="proj-desc">Healthcare RPM Web Platform (200+ components, Kanban CRM, rules engine, RBAC), Patient Mobile App (React Native, BLE medical device integration, Razorpay), and Provider Mobile App (React Native 0.81, deployed to App Store &amp; Play Store).</div>
+      <div class="tech-list">
+        <span class="tech-tag">React 18</span><span class="tech-tag">React Native</span><span class="tech-tag">Redux</span><span class="tech-tag">MUI</span><span class="tech-tag">Recharts</span><span class="tech-tag">BLE Manager</span><span class="tech-tag">Firebase</span><span class="tech-tag">iOS</span><span class="tech-tag">Android</span>
+      </div>
+    </div>
+
+    <div class="project-card" style="border-left-color:#9ca3af; background:#f9fafb;">
+      <div class="proj-hdr">
+        <span class="proj-title">&#9881;&#65039; Enterprise Workflow Platform (Clowre)</span>
+        <span class="proj-role" style="background:#fef3c7; color:#92400e;">Team Contribution</span>
+      </div>
+      <div class="proj-desc">6 independently deployable microfrontend modules: Form Builder, Ticket Management, Certificate Manager, Gatekeeper, Workflow Manager, and Shell App.</div>
+      <div class="tech-list">
+        <span class="tech-tag">React</span><span class="tech-tag">Redux</span><span class="tech-tag">MUI v4/v5</span><span class="tech-tag">Webpack MFE</span><span class="tech-tag">Formik</span><span class="tech-tag">Kubernetes</span>
+      </div>
+    </div>
+
+    <div class="project-card" style="border-left-color:#9ca3af; background:#f9fafb;">
+      <div class="proj-hdr">
+        <span class="proj-title">&#128104;&#8205;&#127979; Online Tutoring Platform</span>
+        <span class="proj-role" style="background:#fef3c7; color:#92400e;">Team Contribution</span>
+      </div>
+      <div class="proj-desc">Multi-role SaaS tutoring platform — real-time messaging via Socket.IO, timezone-aware scheduling, integrated payments &amp; payout system, Dockerized multi-environment deployments.</div>
+      <div class="tech-list">
+        <span class="tech-tag">React 16</span><span class="tech-tag">Redux</span><span class="tech-tag">Socket.IO</span><span class="tech-tag">Material UI</span><span class="tech-tag">Recharts</span><span class="tech-tag">Docker</span><span class="tech-tag">Kubernetes</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ EDUCATION ═══════════ -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="degree">B.A. in History &amp; Political Science</div>
+        <div class="school">Maharshi Dayanand Saraswati University, Ajmer</div>
+        <div class="note">Non-traditional path to tech — studying history sharpened systems thinking, root-cause analysis, and storytelling skills that make for a better engineer and leader.</div>
+      </div>
+      <div class="edu-year">2020 – 2023</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="degree">XII — Science Stream</div>
+        <div class="school">Jai Rana Senior Secondary School, Jasnagar</div>
+      </div>
+      <div class="edu-year">2018</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="degree">X</div>
+        <div class="school">Jai Rana Senior Secondary School, Jasnagar</div>
+      </div>
+      <div class="edu-year">2016</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

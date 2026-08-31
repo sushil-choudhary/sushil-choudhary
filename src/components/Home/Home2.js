@@ -15,7 +15,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const stats = [
   { end: 5, suffix: "+", label: "Years Experience" },
-  { end: 7, suffix: "+", label: "Engineers Led" },
+  { end: 8, suffix: "+", label: "Engineers Led" },
+  { end: 10, suffix: "+", label: "Engineers Mentored" },
   { end: 10, suffix: "+", label: "Projects Shipped" },
 ];
 
@@ -46,7 +47,7 @@ function Home2() {
       <Container>
         <Row className="justify-content-center stats-row">
           {stats.map((stat, i) => (
-            <Col key={i} xs={4} md={2}>
+            <Col key={i} xs={6} sm={3} md={2}>
               <StatCard {...stat} />
             </Col>
           ))}
@@ -72,13 +73,13 @@ function Home2() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               I'm a <b className="purple">Team Lead & Full Stack Developer</b>{" "}
-              leading a team of <b className="purple">7+ engineers</b> while
-              actively building enterprise-grade products. My journey started
-              with curiosity and grew into a deep obsession with crafting things
-              that actually work at scale 🚀
+              leading a team of <b className="purple">8+ engineers</b>, having
+              mentored <b className="purple">10+ engineers</b> across projects
+              to date, while actively building enterprise-grade products. My
+              journey started with curiosity and grew into a deep obsession with
+              crafting things that actually work at scale 🚀
               <br />
-              <br />
-              I specialize in{" "}
+              <br />I specialize in{" "}
               <i>
                 <b className="purple">React Native</b>
               </i>{" "}
@@ -101,10 +102,12 @@ function Home2() {
               real-time features, and shipping production apps to App Stores.
               <br />
               <br />
-              I'm also integrating{" "}
-              <b className="purple">AI tools including Claude</b> into my daily
-              workflow — accelerating development, code reviews, and problem
-              solving at the team level.
+              I'm also the <b className="purple">project auditor</b> for our
+              engineering org — regularly reviewing codebases and architecture
+              across teams for quality, risk, and technical debt — and I
+              integrate <b className="purple">AI tools including Claude</b> into
+              my daily workflow, accelerating development, code reviews, and
+              problem solving at the team level.
             </motion.p>
           </Col>
           <Col md={4} className="myAvtar">

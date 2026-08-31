@@ -25,7 +25,7 @@ function NavBar() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Sushil.pdf";
+    link.href = "/Sushil_Choudhary_Resume.pdf";
     link.setAttribute("download", "Sushil-Choudhary-Resume.pdf");
     document.body.appendChild(link);
     link.click();
@@ -79,7 +79,9 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
                 Projects
               </Nav.Link>
             </Nav.Item>
