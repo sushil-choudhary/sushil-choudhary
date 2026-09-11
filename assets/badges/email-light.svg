@@ -1,0 +1,11 @@
+<svg width="138" height="48" viewBox="0 0 138 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EMAIL">
+  <title>EMAIL</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;display=swap');
+    .label { font-family: 'Raleway', 'Segoe UI', system-ui, sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; fill: #1F2328; }
+  </style>
+  <rect x="0.5" y="0.5" width="137" height="47" rx="24" fill="#F6F8FA" stroke="#D0D7DE"/>
+  <g transform="translate(18, 14) scale(0.8333)">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01L12 12l8-6.99V6H4zM4 18h16V8.24l-8 6.99-8-6.99V18z" fill="#D64526"/>
+  </g>
+  <text x="46" y="30" class="label">EMAIL</text>
+</svg>

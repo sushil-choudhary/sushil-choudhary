@@ -1,0 +1,23 @@
+<svg width="700" height="140" viewBox="0 0 700 140" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Engineering snapshot">
+  <title>Engineering snapshot</title>
+  <defs>
+    <linearGradient id="snapshot-grad-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C770F0"/>
+      <stop offset="55%" stop-color="#9B5DE5"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&amp;display=swap');
+      .value { font-family: 'Raleway', 'Segoe UI', system-ui, sans-serif; font-weight: 700; font-size: 34px; fill: url(#snapshot-grad-dark); }
+      .label { font-family: 'Raleway', 'Segoe UI', system-ui, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1px; fill: #8B949E; }
+    </style>
+  </defs>
+  <rect x="0.5" y="0.5" width="699" height="139" rx="12" fill="#0D1117" stroke="#30363D"/>
+  <text x="87.5" y="70" text-anchor="middle" class="value">5+</text><text x="87.5" y="98" text-anchor="middle" class="label">YEARS EXPERIENCE</text>
+  <text x="262.5" y="70" text-anchor="middle" class="value">8+</text><text x="262.5" y="98" text-anchor="middle" class="label">ENGINEERS LED</text>
+  <line x1="175.0" y1="30" x2="175.0" y2="110" stroke="#21262D" stroke-width="1"/>
+  <text x="437.5" y="70" text-anchor="middle" class="value">10+</text><text x="437.5" y="98" text-anchor="middle" class="label">ENGINEERS MENTORED</text>
+  <line x1="350.0" y1="30" x2="350.0" y2="110" stroke="#21262D" stroke-width="1"/>
+  <text x="612.5" y="70" text-anchor="middle" class="value">10+</text><text x="612.5" y="98" text-anchor="middle" class="label">PLATFORMS SHIPPED</text>
+  <line x1="525.0" y1="30" x2="525.0" y2="110" stroke="#21262D" stroke-width="1"/>
+</svg>

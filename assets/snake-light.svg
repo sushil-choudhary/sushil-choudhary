@@ -1,0 +1,8 @@
+<svg width="880" height="136" viewBox="0 0 880 136" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Snake renders after first Action run">
+  <title>Snake renders after first Action run</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&amp;display=swap');
+    .msg { font-family: 'Raleway', 'Segoe UI', system-ui, sans-serif; font-weight: 600; font-size: 13px; fill: #57606A; }
+  </style>
+  <rect x="0.5" y="0.5" width="879" height="135" rx="8" fill="#FFFFFF" stroke="#D0D7DE" stroke-dasharray="4 4"/>
+  <text x="440.0" y="72.0" text-anchor="middle" class="msg">Snake renders after first Action run</text>
+</svg>

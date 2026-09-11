@@ -1,0 +1,92 @@
+name: Update GitHub telemetry cards
+
+# Refreshes the dynamic SVG cards under assets/cards/ (stats, top languages,
+# streak, activity graph) by downloading them from the open-source
+# github-readme-stats / github-readme-streak-stats / github-readme-activity-graph
+# generators and committing the result.
+#
+# Why commit the SVG instead of hotlinking the API in README.md directly:
+# those services are third-party and occasionally slow/rate-limited or down.
+# By fetching on a schedule and committing a static file, the README always
+# renders instantly from a known-good copy — a stale card for a few hours is
+# a much better failure mode than a broken image on the profile.
+on:
+  schedule:
+    - cron: "17 3 * * *" # once a day
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-stats.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats
+  cancel-in-progress: true
+
+env:
+  GH_USERNAME: sushil-choudhary
+
+jobs:
+  refresh-cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download stats / languages / streak / activity-graph SVGs
+        run: |
+          set -euo pipefail
+          mkdir -p assets/cards
+          BASE_STATS="https://github-readme-stats.vercel.app/api"
+          BASE_STREAK="https://streak-stats.demolab.com"
+          BASE_ACTIVITY="https://github-readme-activity-graph.vercel.app/graph"
+
+          fetch() { curl -fsSL --retry 3 --retry-delay 5 -o "$1" "$2"; }
+
+          # Overview stats card
+          fetch assets/cards/stats-dark.svg  "${BASE_STATS}?username=${GH_USERNAME}&show_icons=true&hide_border=true&theme=github_dark&bg_color=00000000&hide=contribs"
+          fetch assets/cards/stats-light.svg "${BASE_STATS}?username=${GH_USERNAME}&show_icons=true&hide_border=true&theme=default&bg_color=00000000&hide=contribs"
+
+          # Top languages
+          fetch assets/cards/langs-dark.svg  "${BASE_STATS}/top-langs/?username=${GH_USERNAME}&layout=compact&hide_border=true&theme=github_dark&bg_color=00000000"
+          fetch assets/cards/langs-light.svg "${BASE_STATS}/top-langs/?username=${GH_USERNAME}&layout=compact&hide_border=true&theme=default&bg_color=00000000"
+
+          # Streak stats
+          fetch assets/cards/streak-dark.svg  "${BASE_STREAK}?user=${GH_USERNAME}&theme=github-dark-blue&hide_border=true&background=00000000"
+          fetch assets/cards/streak-light.svg "${BASE_STREAK}?user=${GH_USERNAME}&theme=default&hide_border=true&background=00000000"
+
+          # Activity graph (last ~3 months, rendered as a line/area chart)
+          fetch assets/cards/activity-graph-dark.svg  "${BASE_ACTIVITY}?username=${GH_USERNAME}&theme=github-compact&hide_border=true&bg_color=00000000&color=E6EDF3&line=9B5DE5&point=C770F0"
+          fetch assets/cards/activity-graph-light.svg "${BASE_ACTIVITY}?username=${GH_USERNAME}&theme=minimal&hide_border=true&bg_color=00000000&color=1F2328&line=7C3AED&point=9333EA"
+
+        # Note: these are the public, no-auth hosted instances of
+        # github-readme-stats / github-readme-streak-stats /
+        # github-readme-activity-graph, so only public contributions are
+        # counted. Counting private contributions requires self-hosting those
+        # services with your own PAT — out of scope here, and not needed for
+        # a profile that should show real public activity anyway.
+
+      - name: Validate downloaded SVGs are non-empty
+        run: |
+          set -euo pipefail
+          for f in assets/cards/*.svg; do
+            if [ ! -s "$f" ]; then
+              echo "::error::$f is empty — upstream service likely failed, aborting commit"
+              exit 1
+            fi
+          done
+
+      - name: Commit changes if any
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: refresh GitHub telemetry cards [skip ci]"
+          git push

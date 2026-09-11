@@ -1,0 +1,8 @@
+<svg width="700" height="200" viewBox="0 0 700 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Activity graph refreshes after first Action run">
+  <title>Activity graph refreshes after first Action run</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&amp;display=swap');
+    .msg { font-family: 'Raleway', 'Segoe UI', system-ui, sans-serif; font-weight: 600; font-size: 13px; fill: #8B949E; }
+  </style>
+  <rect x="0.5" y="0.5" width="699" height="199" rx="8" fill="#0D1117" stroke="#30363D" stroke-dasharray="4 4"/>
+  <text x="350.0" y="104.0" text-anchor="middle" class="msg">Activity graph refreshes after first Action run</text>
+</svg>
