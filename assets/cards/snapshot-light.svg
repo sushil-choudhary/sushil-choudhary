@@ -18,6 +18,6 @@
   <line x1="175.0" y1="30" x2="175.0" y2="110" stroke="#EAEEF2" stroke-width="1"/>
   <text x="437.5" y="70" text-anchor="middle" class="value">10+</text><text x="437.5" y="98" text-anchor="middle" class="label">ENGINEERS MENTORED</text>
   <line x1="350.0" y1="30" x2="350.0" y2="110" stroke="#EAEEF2" stroke-width="1"/>
-  <text x="612.5" y="70" text-anchor="middle" class="value">10+</text><text x="612.5" y="98" text-anchor="middle" class="label">PLATFORMS SHIPPED</text>
+  <text x="612.5" y="70" text-anchor="middle" class="value">20+</text><text x="612.5" y="98" text-anchor="middle" class="label">PLATFORMS SHIPPED</text>
   <line x1="525.0" y1="30" x2="525.0" y2="110" stroke="#EAEEF2" stroke-width="1"/>
 </svg>

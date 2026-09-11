@@ -25,7 +25,7 @@
 
 I build production React and React Native systems — component libraries, micro-frontend architectures, and cross-platform mobile apps that ship to real app stores, not demos.
 
-Over 5+ years at **Sarvika Technologies** I've gone from intern to Team Lead, architecting Ed-Tech, Healthcare, and Enterprise SaaS platforms end-to-end — almost always as the engineer owning frontend architecture from the first component through production. I care more about reusable component design, feature-based architecture, and frontend performance (code-splitting, lazy loading, bundle discipline) than chasing every new framework.
+Over 5+ years I've gone from intern to Team Lead, architecting Ed-Tech, Healthcare, and Enterprise SaaS platforms end-to-end — almost always as the engineer owning frontend architecture from the first component through production. I care more about reusable component design, feature-based architecture, and frontend performance (code-splitting, lazy loading, bundle discipline) than chasing every new framework.
 
 I came in through a B.A. in History & Political Science, not a CS degree — turns out tracing root causes and thinking in systems transfers well to debugging and architecture. Today I lead 8+ engineers, have mentored 10+ across projects, and act as project auditor reviewing codebases and architecture for technical risk across the org.
 
@@ -44,7 +44,7 @@ I came in through a B.A. in History & Political Science, not a CS degree — tur
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/snapshot-dark.svg">
-    <img width="700" src="assets/cards/snapshot-light.svg" alt="5+ years experience, 8+ engineers led, 10+ engineers mentored, 10+ platforms shipped">
+    <img width="700" src="assets/cards/snapshot-light.svg" alt="5+ years experience, 8+ engineers led, 10+ engineers mentored, 20+ platforms shipped">
   </picture>
 </p>
 
@@ -111,7 +111,7 @@ I came in through a B.A. in History & Political Science, not a CS degree — tur
   <img src="assets/sections/light/05-platforms.svg" alt="Platforms I've built" width="100%">
 </picture>
 
-Enterprise products architected and led independently as Team Lead / Senior Engineer at Sarvika Technologies. These are proprietary client platforms — no public repos or live demos, so scale is described instead of GitHub metrics.
+Enterprise products architected and led independently as Team Lead / Senior Engineer. These are proprietary platforms — no public repos or live demos to link to, so scale is described instead of GitHub metrics.
 
 <div align="center">
 <table>
@@ -126,22 +126,22 @@ Enterprise products architected and led independently as Team Lead / Senior Engi
 <tr>
 <td align="left"><b>Healthcare RPM Web Platform</b><br/><sub>Remote Patient Monitoring</sub></td>
 <td align="left">Vitals dashboard, Kanban-style CRM (@dnd-kit), rules engine, RBAC, HIPAA-aware design.</td>
-<td align="left">React 18 · Redux · MUI · Tailwind · Vitest<br/><sub>200+ components · 15+ modules · ~182K lines</sub></td>
+<td align="left">React 18 · Redux · MUI · Tailwind · Vitest</td>
 </tr>
 <tr>
 <td align="left"><b>LMS Administration Portal</b><br/><sub>Learning Management System</sub></td>
-<td align="left">14-module LMS admin console with AI content generation and live WebSocket features.</td>
-<td align="left">React 18 · Redux · MUI v7 · Webpack 5 MFE<br/><sub>683+ files · 231+ components · 15+ microservices</sub></td>
+<td align="left">LMS admin console with AI content generation and live WebSocket features.</td>
+<td align="left">React 18 · Redux · MUI v7 · Webpack 5 MFE<br/><sub>15+ microservices</sub></td>
 </tr>
 <tr>
-<td align="left"><b>Provider &amp; Wellness Mobile App</b><br/><sub>React Native · iOS &amp; Android</sub></td>
-<td align="left">Dual-role provider/client app with AI-assisted diet &amp; workout plans — live on both stores.</td>
+<td align="left"><b>Patient, Provider &amp; Wellness Mobile App</b><br/><sub>React Native · iOS &amp; Android</sub></td>
+<td align="left">Dual-role patient/provider app with AI-assisted diet &amp; workout plans — live on both stores.</td>
 <td align="left">React Native 0.81 · TypeScript · Redux Toolkit<br/><sub>App Store &amp; Play Store · 8+ microservices</sub></td>
 </tr>
 <tr>
 <td align="left"><b>Ed-Tech Administration Portal</b><br/><sub>Student Information System</sub></td>
 <td align="left">Central admin hub for enrollment, programs, grading, reporting, and communication.</td>
-<td align="left">React 18 · Redux · Webpack 5 MFE · Kubernetes<br/><sub>28+ modules · multi-tenant</sub></td>
+<td align="left">React 18 · Redux · Webpack 5 MFE · Kubernetes<br/><sub>multi-tenant</sub></td>
 </tr>
 </tbody>
 </table>
@@ -165,7 +165,7 @@ Enterprise products architected and led independently as Team Lead / Senior Engi
 <tr><td align="left">LMS Student Portal</td><td align="left">React 18 · TypeScript · Redux · WebSocket · Recharts</td></tr>
 <tr><td align="left">License Management Dashboard</td><td align="left">Next.js 15 · React 19 · TypeScript · Redux Toolkit</td></tr>
 <tr><td align="left">Patient Healthcare Mobile App</td><td align="left">React Native 0.68 · Redux · NativeBase · BLE Manager</td></tr>
-<tr><td align="left">Enterprise Workflow Platform (Clowre)</td><td align="left">React · Redux · MUI · Webpack MFE (6 modules)</td></tr>
+<tr><td align="left">Enterprise Workflow Platform</td><td align="left">React · Redux · MUI · Webpack MFE</td></tr>
 <tr><td align="left">Online Tutoring Platform</td><td align="left">React 16 · Redux · MUI · Socket.IO</td></tr>
 <tr><td align="left">Internal Commerce &amp; Order Management</td><td align="left">Next.js 14 · TypeScript · Zustand · TanStack Query</td></tr>
 </tbody>
@@ -176,60 +176,8 @@ Enterprise products architected and led independently as Team Lead / Senior Engi
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/sections/dark/06-opensource.svg">
-  <img src="assets/sections/light/06-opensource.svg" alt="Public repositories" width="100%">
-</picture>
-
-<div align="center">
-<table>
-<thead>
-<tr>
-<th align="center" width="30%">Repository</th>
-<th align="center">⭐ Stars</th>
-<th align="center">🍴 Forks</th>
-<th align="center">Links</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><b><a href="https://github.com/sushil-choudhary/sushil-choudhary">Personal Portfolio</a></b></td>
-<td align="center"><img src="https://img.shields.io/github/stars/sushil-choudhary/sushil-choudhary?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="stars"></td>
-<td align="center"><img src="https://img.shields.io/github/forks/sushil-choudhary/sushil-choudhary?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="forks"></td>
-<td align="center"><a href="https://sushil.vercel.app">live</a></td>
-</tr>
-<tr>
-<td align="left"><b><a href="https://github.com/sushil-choudhary/amazon-clone">amazon-clone</a></b></td>
-<td align="center"><img src="https://img.shields.io/github/stars/sushil-choudhary/amazon-clone?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="stars"></td>
-<td align="center"><img src="https://img.shields.io/github/forks/sushil-choudhary/amazon-clone?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="forks"></td>
-<td align="center"><a href="https://amazon-master.vercel.app/">live</a></td>
-</tr>
-<tr>
-<td align="left"><b><a href="https://github.com/sushil-choudhary/hems">hems</a></b></td>
-<td align="center"><img src="https://img.shields.io/github/stars/sushil-choudhary/hems?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="stars"></td>
-<td align="center"><img src="https://img.shields.io/github/forks/sushil-choudhary/hems?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="forks"></td>
-<td align="center"><a href="https://hems-lovat.vercel.app/">live</a></td>
-</tr>
-<tr>
-<td align="left"><b><a href="https://github.com/sushil-choudhary/vue-invoice-app">vue-invoice-app</a></b></td>
-<td align="center"><img src="https://img.shields.io/github/stars/sushil-choudhary/vue-invoice-app?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="stars"></td>
-<td align="center"><img src="https://img.shields.io/github/forks/sushil-choudhary/vue-invoice-app?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="forks"></td>
-<td align="center">—</td>
-</tr>
-<tr>
-<td align="left"><b><a href="https://github.com/sushil-choudhary/WeShare">WeShare</a></b></td>
-<td align="center"><img src="https://img.shields.io/github/stars/sushil-choudhary/WeShare?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="stars"></td>
-<td align="center"><img src="https://img.shields.io/github/forks/sushil-choudhary/WeShare?style=flat-square&label=&labelColor=0D1117&color=21262D" alt="forks"></td>
-<td align="center">—</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/sections/dark/07-stack.svg">
-  <img src="assets/sections/light/07-stack.svg" alt="Tech stack" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sections/dark/06-stack.svg">
+  <img src="assets/sections/light/06-stack.svg" alt="Tech stack" width="100%">
 </picture>
 
 <div align="center">
@@ -280,8 +228,8 @@ Enterprise products architected and led independently as Team Lead / Senior Engi
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/sections/dark/08-experience.svg">
-  <img src="assets/sections/light/08-experience.svg" alt="Experience" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/sections/dark/07-experience.svg">
+  <img src="assets/sections/light/07-experience.svg" alt="Experience" width="100%">
 </picture>
 
 <div align="center">
@@ -290,7 +238,7 @@ Enterprise products architected and led independently as Team Lead / Senior Engi
 <tr>
 <th align="left" width="28%">Role</th>
 <th align="left" width="18%">Duration</th>
-<th align="left" width="54%">Sarvika Technologies</th>
+<th align="left" width="54%">Highlights</th>
 </tr>
 </thead>
 <tbody>
